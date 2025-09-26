@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #222;
+}
+
+.box {
+    width: 200px;
+    background-color: aqua;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.container1 {    
+    display: flex;    
+    border: 3px solid black;
+    flex-direction: column;
+    height: 500px;
+    
+}
+
+.container2 {    
+    display: flex;    
+    border: 3px solid black;
+    padding: 50px;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.container3 {    
+    display: flex;    
+    border: 3px solid black;
+    
+}
+
+.container4 {    
+    display: flex;    
+    border: 3px solid black;
+    flex-direction: row-reverse;
+    height: 200px;
+}
+
+.container4 .element1{
+    height: auto;
+}
+
+.container4 .element4{
+    height: auto;
+}
+
+
+.container4 .element2{
+    align-self: flex-start;
+}
+.container4 .element3{
+    align-self: center;
+}
+
+.container1 .element2{
+    flex-grow: 1;
+    background-color: red;
+}
+.container1 .element4{
+    flex-grow: 1;
+    background-color: red;
+}
+.container1 .element1{
+    flex-grow: 0;
+}
+.container1 .element3{
+    flex-grow: 0;
+}
+
+
+.element31{
+    order: 3;
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.element32{
+    order: 4;
+    flex-grow: 0;
+    background-color: yellow;
+}
+
+.element33{
+    order: 1;
+    flex-grow: 0;
+    background-color: green;
+}
+
+.element34{
+    order: 2;
+    flex-grow: 3;
+    background-color: red;
+}
+
+
+/*
+   flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+*/
+
